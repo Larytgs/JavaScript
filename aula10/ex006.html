@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: black;
+        }
+        div#area{
+            font:  20pt bolder;
+            font-family:'Courier New', Courier, monospace;
+            background-color: purple;
+            color: wheat;
+            box-shadow: 1px 1px 2px purple;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Interaja...
+    </div>
+    <script>
+        var a = window.document.getElementById('area') //colocando p fora, serve para todos
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicar() {
+            a.innerText = 'Voce clicou!!'
+            a.style.background = 'green'
+            a.style.color = 'yellow'
+        }
+        function entrar() { 
+            a.innerText = 'entrou'
+        }
+        function sair() {
+            a.innerText = 'saiu'
+            a.style.background = 'purple'
+        }
+    </script>
+</body>
+</html>
