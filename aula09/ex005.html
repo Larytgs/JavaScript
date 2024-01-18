@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgba(145, 190, 230, 0.726);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div{
+            font-size: 1.2em;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Primeiro passos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendo a usar <strong>DOM</strong> em Java Script</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        /*window.document.write("Ola mundo!<br>")
+        window.document.write(window.document.URL) //tem varios outros*/
+        
+        var p1 = window.document.getElementsByTagName('p')[1] //seleciona o 1º paragrafo
+        window.document.write("<hr>Esta escrito assim: &nbsp" + p1.innerText) //innerHTML: mostra com as formataçoes
+
+        /*var d = window.document.getElementById('msg')
+        window.document.write('<hr>' + d.innerHTML)
+        d.style.background = 'green' //vai mudar a cor dele em cima
+        d.innerText = 'Mudando o texto da div com ID' //vai mudar em cima*/
+
+        /*var d = window.document.getElementsByName('msg')[0]
+        d.style.textAlign = 'center' //coloando o texto no centro
+        d.innerText = 'Mudando agora com o Name' //vai mudar em cima*/
+
+
+        /*var d = window.document.getElementsByClassName('msg')[0]
+        d.style.background = 'orange'
+        d.innerText = 'Mudando agora com o Class'*/
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+        d.innerText = 'Mudando agora por QuerySelector'
+
+    </script>
+</body>
+</html>
