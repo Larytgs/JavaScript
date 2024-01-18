@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando numeros</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        div{
+            font-size: larger;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2" onclick="somar()">
+    <input type="button" value="somar">
+
+    <div id="res">Resultado..</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value) //conversao de numero
+            var n2 = Number(tn2.value) //se nao, nao funciona
+            s = n1 + n2
+            res.innerHTML = `A SOMA ENTRE ${n1} e ${n2} é = a <strong>${s}</strong>`
+        }
+    </script>
 </body>
 </html>
