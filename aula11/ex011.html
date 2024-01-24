@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passaporte</title>
+    <title>Nacionalidade</title>
 </head>
 <body>
     <h1>Paises</h1>
-    Em que país voce vive? <input type="text" name="pais" id="txtpais">
-    <input type="button" value="Verificar">
+    Em que país voce vive? <input type="text" name="nome" id="txtnome" >
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="vive">
+
+    </div>
 
     <script>
-
+        
+        function verificar(){
+            var pais = window.document.getElementById('txtnome')
+            var vive = window.document.querySelector('div#vive')
+            var nac = String(pais.value)
+            vive.innerHTML = `Vivendo em ${nac}`
+            if (nac == 'Brasil' || nac == 'brasil'){
+                vive.innerHTML += "<p>Voce é Brasileiro.</p>"
+            }else{
+                vive.innerHTML += "<p>Voce é Estrangeiro.</p>"
+            }
+        }
     </script>
 </body>
 </html>
