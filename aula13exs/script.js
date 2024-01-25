@@ -25,6 +25,10 @@ function verificar(){
                 //jovem
                 foto.src = ("fotos/jovemhomem.png")
                 document.body.style.background = '#7E5142'
+            } else if (idade <= 35){
+                //adulto
+                foto.src = ("fotos/adultojovemhomem.png")
+                document.body.style.background = '#00558B'
             } else if (idade <= 55){
                 //adulto
                 foto.src = ("fotos/adultohomem.png")
@@ -48,7 +52,11 @@ function verificar(){
                 //jovem
                 foto.src = ("fotos/jovemmulher.png")
                 document.body.style.background = '#DC4852'
-            } else if (idade <= 55){
+            } else if (idade <= 35){
+                //adulto
+                foto.src = ("fotos/adultojovemmulher.png")
+                document.body.style.background = '#3C1D20'
+            }  else if (idade <= 55){
                 //adulto
                 foto.src = ("fotos/adultamulher.png")
                 document.body.style.background = '#BCB7AE'
