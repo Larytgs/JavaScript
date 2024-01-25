@@ -1,5 +1,5 @@
 
-function carregar() { //paracarregar, coloquei no html(body)
+function carregar() { //para carregar, coloquei no html(body)
 
     var msg = window.document.getElementById('msg')
     var foto = document.getElementById('imagem')
