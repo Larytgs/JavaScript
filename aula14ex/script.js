@@ -1,16 +1,23 @@
+
 function carregar() { //paracarregar, coloquei no html(body)
 
     var msg = window.document.getElementById('msg')
-    var img = document.getElementById('foto')
+    var foto = document.getElementById('imagem')
     var data = new Date()  //data atual
     var hora = data.getHours() //hora atual
+    var hora = 8
 
-    msg.innerHTML = `Agora sao ${hora} horas.`
     if (hora >= 7 && hora < 12){
-        img.src = 'manha.png'
-    }else if (hora >= 12 && hora < 18){
-        img.src = 'tarde.png'
-    }else{
-        img.src = 'noite.png'
+        msg.innerText = `Bom dia! Agora sao ${hora} horas.`
+        img.src= ("fotos/manha.png")
+        document.body.style.background = '#FEDC5A'
+    } else if (hora >= 12 && hora <= 18){
+        msg.innerHTML = `Boa tarde! Agora sao ${hora} horas.`
+        foto.innerHTML= '<img src="fotos/tarde.png">'
+        document.body.style.background = '#f59629'
+    } else{
+        msg.innerHTML = `Boa noite! Agora sao ${hora} horas.`
+        foto.innerHTML= '<img src="fotos/noite.png">'
+        document.body.style.background = '#1e4c5c'
     }
 }

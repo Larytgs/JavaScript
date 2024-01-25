@@ -1,5 +1,5 @@
 var agora = new Date //para mostrar as hora
-var hora = agora.getHours() //extada q estiver executando
+var hora = agora.getHours() //exata q estiver executando
 console.log(`Agora sao ${hora} horas`)
 if (hora < 12){
     console.log("Bom diaaa")

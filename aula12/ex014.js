@@ -1,4 +1,4 @@
-var agora = new Date()
+var agora = new Date() // dia atual
 var diaSem = agora.getDay()
 
 switch(diaSem) {
