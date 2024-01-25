@@ -19,6 +19,9 @@ section{
     margin: auto; /*deixa centralizado*/
 }
 
+#imagem{
+    background-color: rgba(250, 235, 215, 0.767);
+}
 
 footer{
     background-color: rgb(87, 87, 228);
