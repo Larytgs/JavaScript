@@ -13,39 +13,49 @@ function verificar(){
         var genero = ''
         if (fsex[0].checked) {
             genero = 'Homem'
-            if (idade = 0 && idade <= 3){
+            if (idade >= 0 && idade <= 3){
                 //bb
                 foto.src = ("fotos/bbmenino.png")
+                document.body.style.background = '#0CAAB5'
             } else if (idade <= 10){
                 //criança
                 foto.src = ("fotos/criançamenino.png")
+                document.body.style.background = '#3A5877'
             } else if (idade <= 18){
                 //jovem
                 foto.src = ("fotos/jovemhomem.png")
+                document.body.style.background = '#7E5142'
             } else if (idade <= 55){
                 //adulto
                 foto.src = ("fotos/adultohomem.png")
+                document.body.style.background = '#DDDAB3'
             } else {
                 //idoso
                 foto.src = ("fotos/idoso.png")
+                document.body.style.background = '#282829'
             }
         } else if (fsex[1].checked){
             genero = 'Mulher'
-            if (idade >= 0 && idade <= 3){
+            if (idade >= 0 && idade <= 3){ 
                 //bb
                 foto.src = ("fotos/bbmenina.png")
+                document.body.style.background = '#c48c96'
             } else if (idade <= 10){
                 //criança
                 foto.src = ("fotos/criançamenina.png")
+                document.body.style.background = '#AA5535'
             } else if (idade <= 18){
                 //jovem
                 foto.src = ("fotos/jovemmulher.png")
+                document.body.style.background = '#DC4852'
             } else if (idade <= 55){
                 //adulto
                 foto.src = ("fotos/adultamulher.png")
+                document.body.style.background = '#BCB7AE'
             } else {
                 //idoso
                 foto.src = ("fotos/idosa.png")
+                document.body.style.background = '#C8BAA1'
             }
         }
         res.style.textAlign = 'center'
