@@ -6,8 +6,10 @@ function contagem() { //para contar, coloquei no html
     var fim = document.getElementById('fim')
     var pas = document.getElementById('passos')
 
-    while (com <= fim){
+    /*while (com <= fim){
         console.log(`${com} ->`)
         com + pas
-    }
+    }*/
+    msg = com + fim
+    msg.innerHTML('msg')
 }
