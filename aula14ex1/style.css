@@ -22,6 +22,10 @@ div{
     text-align: left;
     padding-top: 10px;
 }
+div#msg{
+    text-align: justify;
+    text-decoration: dashed;
+}
 
 footer{
     text-align: center;
