@@ -19,7 +19,7 @@ section{
     margin: auto; /*deixa centralizado*/
 }
 div{
-    text-align: center;
+    text-align: left;
     padding-top: 10px;
 }
 
