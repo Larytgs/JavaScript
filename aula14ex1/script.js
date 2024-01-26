@@ -10,6 +10,14 @@ function contagem() { //para contar, coloquei no html
         console.log(`${com} ->`)
         com + pas
     }*/
-    msg = com + fim
-    msg.innerHTML('msg')
-}
+    
+    
+    if (com = '', pas = '', fim = '' || 0){
+        window.alert('Impossivel Contar!')
+    } else if (pas = 0){
+        window.alert('Passo invalido, considerado PASSO 1')
+        pas = 1
+    }
+    msg.innerHTML = `oi${com}`
+} 
+    
