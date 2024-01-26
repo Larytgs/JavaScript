@@ -68,7 +68,7 @@ function verificar(){
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Foi detectado ${genero} com ${idade} anos.`
-        res.appendChild(foto)
+        res.appendChild(foto) //adicionar depois uma foto
     } 
     
 }
