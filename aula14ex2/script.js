@@ -1,23 +1,21 @@
 
-function carregar() { //para carregar, coloquei no html(body)
+function tabuada() { //para carregar, coloquei no html
 
-    var msg = window.document.getElementById('msg')
-    var foto = document.getElementById('imagem')
-    var data = new Date()  //data atual
-    var hora = data.getHours() //hora atual
+    var num = document.getElementById('txtn')
+    var tab = document.getElementById('seltab')
     
-
-    if (hora >= 7 && hora < 12){
-        msg.innerText = `Bom dia! Agora sao ${hora} horas.`
-        img.src= ("fotos/manha.png")
-        document.body.style.background = '#FEDC5A'
-    } else if (hora >= 12 && hora <= 18){
-        msg.innerHTML = `Boa tarde! Agora sao ${hora} horas.`
-        foto.innerHTML= '<img src="fotos/tarde.png">'
-        document.body.style.background = '#f59629'
-    } else{
-        msg.innerHTML = `Boa noite! Agora sao ${hora} horas.`
-        foto.innerHTML= '<img src="fotos/noite.png">'
-        document.body.style.background = '#1e4c5c'
+    if (num.value.length == 0) {
+        window.alert('Por favor, digite um numero!')
+    } else {
+        var n = Number(num.value)
+        var c = 1
+        tab.innerHTML = '' //antes de mostrar a tabuada, limpe a tabela antes 
+        while (c <= 10){
+            var item = document.createElement('option') //criar um elemento de opçoes
+            item.text = `${n} x ${c} = ${n*c}`
+            tab.appendChild(item) //adicionar os itens
+            c++
+        }
     }
+    
 }
