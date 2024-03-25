@@ -28,7 +28,7 @@
 # Repositório dos meus Cursos de HTML5 CSS3 e JavaScript
 
 <p id= 'paragrafo'>
-    Olá, Aqui mostro meus exercicios da Udemy
+    Olá, Aqui mostro meus Desafios e Exercicios da Udemy
 </p>
 
 ## **Desafios da Udemy:**
