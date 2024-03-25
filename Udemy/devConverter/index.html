@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>devConverter</title>
+</head>
+<body>
+    <header>
+        <h1>$DevConverter</h1>
+    </header>
+
+    <main>
+        <form id="formulario">
+            <section class="inputs_conteiners">
+                
+                <div class="form-group">
+                    <label for="valor-real">Valor a ser convertido (R$)</label>
+                    <input type="number" name="valor-real" id="valor-real" placeholder="R$20,00" max="100000">
+                </div>
+
+                <div class="form-group">
+                    <label for="valor-real">Escolha a moeda:</label>
+                    <select id="currency">
+                        <option value="">Selecione...</option>
+                        <option value="euro">Euros</option>
+                        <option value="dolar">Dolar (Americano)</option>
+                        <option value="peso">Peso (Argentino)</option>
+                        <option value="libra">Libra (Londres)</option>
+                        <!--<option value="rublo">Rublo (Russo)</option>-->
+                        <option value="yuan">Yuan (China)</option>
+                    </select>
+                </div>
+
+            </section>
+
+            <button onclick="converter()" type="submit">Converter</button>
+
+        </form>
+
+        <h2 id="resultado"></h2><!--para mostrar o resultado-->
+
+    </main>
+
+    <footer>
+        &copy; Laryssa Tortato Gomes da Silva
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

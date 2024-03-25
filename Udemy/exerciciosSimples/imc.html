@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body{
+            background-color: rgb(19, 61, 47);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: aquamarine;
+        }
+        h1{
+            font-size: 2em;
+            font-weight: 800;
+            margin: 10px;
+            margin-top: 100px;
+            padding: 10px;
+        }
+        main{
+            background-color: rgba(34, 99, 77, 0.527);
+            width: 600px;
+            display: inline-block;
+            padding: 20px;
+            padding-bottom: 20px;
+            border: 5px dotted rgb(19, 61, 47);
+        }
+        label{
+            font-size: 1.3em;
+            font-weight: bold;
+            color: aliceblue;
+            padding-left: 20px;
+            padding: 10px;
+
+            display: block;
+        }
+        input button{
+            background-color: aquamarine;
+        }
+        #resultado{
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        @media (max-width: 900px) {
+            main{
+                width: 280px;
+            }
+            h1{
+            font-size: 1.7em;
+            }
+            label{
+                font-size: 1em;
+            }
+            #total{
+                padding: 2px;
+            }
+            #codigo{
+                padding: 5px;
+                margin-top: 5px;
+            }
+            #resultado{
+                font-size: 1.8em;
+                font-weight: bold;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o seu IMC</h1>
+    <main>
+        <div>
+            <label for="alt">Altura:</label>
+            <input type="number" name="alt" id="alt" placeholder="Qual a sua altura?">
+            
+            <label for="peso">Peso:</label>
+            <input type="number" name="peso" id="peso" placeholder="Qual o seu peso?">
+            
+            <input type="button" value="calcular" onclick="imc()">
+        </div>
+        <div id="resultado">
+            Seu IMC é de...
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    function imc(){
+        let peso = document.getElementById('peso')
+        let altura = document.getElementById('alt')
+        let res = document.getElementById('resultado')
+        
+        let n1 = Number(peso.value) //conversao de numero
+        let n2 = Number(altura.value) //se nao, nao funciona
+        
+        soma = n1 / (n2 * n2)
+        res.innerHTML = `Seu IMC é de ${soma} <br><br>` 
+
+        if (soma < 18.5){
+            res.innerHTML += `Voce esta Abaixo do Peso normal`
+        }else if(soma > 18.5 && soma <= 25){
+            res.innerHTML += `Voce esta com o Peso Ideal`
+        }else if(soma > 25 && soma <= 30){
+            res.innerHTML += `Voce esta Sobrepeso`
+        }else if(soma > 30 && soma <= 40){
+            res.innerHTML += `Voce esta com Obesidade`
+        }else{
+            res.innerHTML += `Voce com Obesidade Mórbida`
+        }     
+        
+    }
+    
+</script>

@@ -1,0 +1,165 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url(estilo/02_APompadourTextSample.ttf) format(truetype) url(estilo/03_APompadourBoldSample.otf) format(opentype);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'titulo';
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: #eeecec;
+    color: white;
+    text-align: center;
+
+    /*display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; /*vai separar as partes do header do body e do footer*/
+}
+
+header{
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: #5ab48d;
+    padding: 25px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 1.3em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, select, button{
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    width: 220px;
+    padding: 10px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.452);
+    margin: 10px 10px;
+}
+input:hover, select:hover{
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.452);
+}
+
+button{
+    background-color: #5ab48d;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+button:active{ /*quando clicar*/
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.452);
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+
+#formulario{
+    margin-top: 60px;
+}
+.inputs_conteiners{
+    display: flex;
+    justify-content: space-around;
+    margin: 8px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+#resultado{
+    font-size: 3.5em;
+    color: #5ab48d;
+    margin-bottom: 50px;
+}
+#resultado span{
+    font-size: 0.6em;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #5ab48d;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+@media (max-width: 750px){
+    header{
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        background-color: #5ab48d;
+        padding: 10px;
+    }
+    form{
+        font-size: 1.2em;
+    }
+    input, select, button{
+        font-size: 1em;
+    }
+
+    #formulario{
+        margin-top: 35px;
+    }
+    .inputs_conteiners{
+        display: flex;
+        flex-direction: column; /*deixar a coluna em baixo*/
+    }
+    .form-group{
+        margin: 15px;
+    }
+    #resultado{
+        font-size: 1.9em;
+        color: #5ab48d;
+        margin-top: 30px;
+    }
+
+    button{
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    button:active{
+        margin-bottom: 0px;
+    }
+    
+    footer{
+        text-align: center;
+        color: white;
+        background-color: #5ab48d;
+        padding: 12px;
+        margin-top: 30px;
+    }
+    
+}
