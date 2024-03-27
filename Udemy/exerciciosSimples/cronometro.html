@@ -4,20 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronometro</title>
+    <style>
+        body{
+            background-color: rgba(30, 66, 54, 0.527);
+            text-align: center;
+        }
+        .container{
+            box-shadow: inset 0px 0px 8px 10px rgba(17, 32, 18, 0.651);
+            width: 300px;
+            
+            display: inline-block; /*para ficar centralizado*/
+        }
+        #relogio{
+
+        }
+        button{
+            padding: 10px;
+            margin-bottom: 25px;
+            border: none;
+            box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.349);
+            border-radius: 15px;
+            width: 5.5em;
+            cursor: pointer;
+        }
+        .ini{
+            background-color: green;
+            color: white;
+        }.ini:hover{background-color: rgba(0, 128, 0, 0.774);}
+        .pause{
+            background-color: rgb(17, 32, 18);
+            color: white;
+        }.pause:hover{background-color: rgba(17, 32, 18, 0.801);}
+        .stop{
+            background-color: red;
+            color: white;
+        }.stop:hover{background-color: rgb(243, 34, 34);}
+    </style>
 </head>
 <body>
     <head>
         <h1>Cronometro</h1>
     </head>
     <main>
-        <section>
+        <section  class="container">
             <div>
-                
+                <h1 id="relogio">00:00:00</h1>
             </div>
             <div>
-
+                <button class="ini" onclick="init()">Inicio</button>
+                <button class="pause" onclick="pause()">Pausar</button>
+                <button class="stop" onclick="stop()">Stop</button>
             </div>
         </section>
     </main>
+
+    <script>
+        const stopwatch = document.getElementById('relogio')
+        let segundos = 0
+        let minutos = 0 
+        let horas = 0
+        let intervalo 
+
+        const digitZero = (digit) => { //colocando um 0 antes
+            if (digit < 10){
+                return `0${digit}`
+            }else {
+                return digit
+            }
+        }
+
+        function init(){
+            watch()
+            intervalo = setInterval(watch, 1000)
+        }   //função p ser executada entre invervalos de tempo
+
+        function pause(){
+            clearInterval(intervalo) //função p parar
+        }
+
+        function stop(){
+            clearInterval(intervalo) //função p parar
+            segundos = 0
+            minutos = 0
+            horas = 0
+            stopwatch.innerHTML = "00:00:00"
+        }
+
+        function watch() {
+
+            segundos ++
+            
+            if(segundos === 60){
+                minutos ++ //incrementar
+                segundos = 0
+            }
+
+            if(minutos === 60){
+                minutos = 0
+                horas ++
+            }
+
+            stopwatch.innerHTML = digitZero(horas) + ':' + digitZero(minutos) + ':' + digitZero(segundos)
+        }
+    </script>
 </body>
 </html>
