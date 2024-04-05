@@ -31,6 +31,10 @@
     Aqui mostro meus Desafios e Exercicios da Udemy
 </p>
 
+## **Uns dos meus Exercicios do Curso em Video:**
+
+* <a href="https://larytgs.github.io//JavaScript/aula14ex1/contador.html" target="_blank">Exercicios Contador</a>
+
 ## **Desafios da Udemy:**
 
 * <a href="https://larytgs.github.io//JavaScript/Udemy/portifolio/index.html" target="_blank">Executar o Portifólio</a>
