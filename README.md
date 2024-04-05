@@ -34,12 +34,16 @@
 
 ## **Uns dos meus Exercicios do Curso em Video:**
 
-* <a href="https://larytgs.github.io//JavaScript/aula14ex1/contador.html" target="_blank">Exercicios Contador</a>
+* <a href="https://larytgs.github.io//JavaScript/aula12ex1/nascimnto.html" target="_blank">Exercicio sobre a Detectar a Idade</a>
+* <a href="https://larytgs.github.io//JavaScript/aula12ex2/horario.html" target="_blank">Exercicio sobre o Horario</a>
+* <a href="https://larytgs.github.io//JavaScript/aula14ex1/contador.html" target="_blank">Exercicio Contador</a>
+* <a href="https://larytgs.github.io//JavaScript/aula14ex2/tabuada.html" target="_blank">Exercicio Tabuada</a>
+* <a href="https://larytgs.github.io//JavaScript/aula16ex1/analNum.html" target="_blank">Exercicio Analisador de Numero</a>
 
 ## **Desafios da Udemy:**
 
 * <a href="https://larytgs.github.io//JavaScript/Udemy/portifolio/index.html" target="_blank">Executar o Portifólio</a>
-* <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/switch.html" target="_blank">Executar Desafio - Switch case</a>
+* <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/switch.html" target="_blank">Executar Desafio - Switch Case</a>
 
 ## **Exercicios da Udemy:**
 
