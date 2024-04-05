@@ -41,3 +41,6 @@
 * <a href="https://larytgs.github.io//JavaScript/Udemy/devConverter/index.html" target="_blank">Executar exercicio da Udemy - Conversor de moedas</a>
 * <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/imc.html" target="_blank">Executar exercicio da Udemy - IMC</a>
 * <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/cronometro.html" target="_blank">Executar exercicio da Udemy - Cronômetro</a>
+
+## **Meu resumo do conteúdo:**
+[Resumo Java Script](https://github.com/Larytgs/JavaScript/files/14891146/Resumo.Java.Script.docx)
