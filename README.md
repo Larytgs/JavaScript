@@ -43,4 +43,4 @@
 * <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/cronometro.html" target="_blank">Executar exercicio da Udemy - Cronômetro</a>
 
 ## **Meu resumo do conteúdo:**
-[Resumo Java Script](https://github.com/Larytgs/JavaScript/files/14891146/Resumo.Java.Script.docx)
+[Download do Resumo Java Script](https://github.com/Larytgs/JavaScript/files/14891146/Resumo.Java.Script.docx)
