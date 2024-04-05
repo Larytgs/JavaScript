@@ -34,7 +34,7 @@
 
 ## **Uns dos meus Exercicios do Curso em Video:**
 
-* <a href="https://larytgs.github.io//JavaScript/aula12ex1/nascimnto.html" target="_blank">Exercicio sobre a Detectar a Idade</a>
+* <a href="https://larytgs.github.io//JavaScript/aula12ex1/nascimnto.html" target="_blank">Exercicio de Detectar a Idade</a>
 * <a href="https://larytgs.github.io//JavaScript/aula12ex2/horario.html" target="_blank">Exercicio sobre o Horario</a>
 * <a href="https://larytgs.github.io//JavaScript/aula14ex1/contador.html" target="_blank">Exercicio Contador</a>
 * <a href="https://larytgs.github.io//JavaScript/aula14ex2/tabuada.html" target="_blank">Exercicio Tabuada</a>
