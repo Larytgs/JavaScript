@@ -21,10 +21,10 @@
 
 
 html, body{
+    overflow-x: hidden; 
     height: 100vh;
     background-color: #333;
     color: white;
-
 }
 
 header{
