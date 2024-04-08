@@ -53,7 +53,7 @@
 
 ## **Meu desafio:**
 
-* <a href="https://larytgs.github.io//Curso de JavaScript/Projetos/musculacao.html" target="_blank">Musculação</a>
+* <a href="https://larytgs.github.io//Curso de JavaScript/Projetos/Musculacao/musculacao.html" target="_blank">Musculação</a>
 
 ## **Meu resumo do conteúdo:**
 **[Download do Resumo Java Script](https://github.com/Larytgs/JavaScript/files/14891146/Resumo.Java.Script.docx)**
