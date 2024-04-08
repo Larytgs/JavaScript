@@ -15,11 +15,11 @@ background-size: cover;*/
 *{
     padding: 0px;
     margin: 0px;
-    font-weight: 100;
-    font-family: cursive;
 }
 
 body{
+    font-weight: 100;
+    font-family: cursive;
     overflow-x: hidden;
     min-height: 100vh;
     width: 98.8vw;
