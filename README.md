@@ -51,7 +51,7 @@
 * <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/imc.html" target="_blank">Executar exercicio da Udemy - IMC</a>
 * <a href="https://larytgs.github.io//JavaScript/Udemy/exerciciosSimples/cronometro.html" target="_blank">Executar exercicio da Udemy - Cronômetro</a>
 
-## **Meu desafio**
+## **Meu desafio:**
 
 * <a href="https://larytgs.github.io//Projetos HTML_e_CSS/Musculacao/musculacao.html" target="_blank">Musculação</a>
 
