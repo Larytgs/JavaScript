@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musculação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Musculação</h1>
+    </header>
+    <main>
+        <section>
+            <form id="formulario">
+
+                <div class="form-group">
+                    <label for="nome" class="escolha">Escolha um aluno:</label>
+                    <select id="nome">
+                        <option value="">Selecione...</option>
+                        <option value="Lary">Laryssa</option>
+                        <option value="Gisa">Gisa</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="dia" class="escolha">Escolha o dia:</label>
+                    <select id="dia">
+                        <option value="">Selecione...</option>
+                        <option value="seg">Segunda</option>
+                        <option value="ter">Terça</option>
+                        <option value="qua">Quarta</option>
+                        <option value="qui">Quinta</option>
+                        <option value="sex">Sexta</option>
+                        <option value="sab">Sabado</option>
+                    </select>
+                </div>
+    
+            </form>
+
+            <button onclick="vizualizar()" type="submit" id="visu">Ver o treino</button>
+
+            <h2 id="resultado"></h2><!--para mostrar o resultado--> 
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; Laryssa Tortato Gomes da Silva
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@charset "UTF8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/Cream\ Cake.otf) format(opentype);
+}
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/Simple\ Plan.otf) format(opentype);
+}
+/*Shorthands: 
+Font: Font style -> Font-weight -> Font-size -> font-family
+backgroung: cor > image > position > repeat > attachment 
+background-size: cover;*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 98.8vw;
+    text-align: center;
+
+    background: #2f6666 url(imgs/academia.png) center center no-repeat fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    padding: 15px;
+    margin: 10px;
+    width: 80vw;
+    margin-top: 0px;
+    text-align: center;
+    background-color: #07080D;
+    color: white;
+    border-radius: 10px;
+}
+
+h1{
+    font: 300 3em 'titulo';
+} 
+
+main{
+    background-color: #07080de0;
+    color: white;
+    width: 700px;
+    min-height: 350px;
+    padding: 10px;
+    margin: 29px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px 4px rgba(0, 0, 0, 0.432);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario{
+    margin-top: 50px;
+    display: flex; /*para deixar em linha*/
+    align-items: center; /*alinhado do centro*/
+}
+#form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.escolha{
+    font: 500 1.2em 'Lucida Sans Regular', 'Lucida Grande', Verdana, serif;
+    background-color: #3C4D55;
+    color: white;
+    padding: 12px 80px;
+}
+#nome{
+    padding: 10px;
+    margin: 25px 15px;
+    width: 250px;
+    background-color: #3C4D55;
+    color: white;
+    font-size: 1.1em;
+    border-left: 4px dotted #07080D;
+    cursor: pointer;
+    text-align: center;
+}
+#dia{
+    padding: 10px;
+    margin: 25px 15px;
+    width: 250px;
+    background-color: #3C4D55;
+    color: white;
+    font-size: 1.1em;
+    border-left: 4px dotted #07080D;
+    cursor: pointer;
+    text-align: center;
+}
+#visu{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3C4D55;
+    color: white;
+    font: italic 800 1.2em 'Times New Roman', Times, serif;
+
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.432);
+    cursor: pointer;
+}
+#resultado{
+    font: 300 'texto';
+    padding: 10px;
+    line-height: 1.4em; /*espaçamento entre as linhas*/
+    text-align: center;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+}
+
+footer{
+    background-color: #07080D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    min-width: 100%;
+}
+
+
+caption{
+    font-size: 1.2em;
+    font-family: 'texto';
+}
+table{
+    border: 6px solid rgba(230, 12, 12, 0.548);  
+    border-radius: 5px;
+    background-color: #3c4d5563;
+    display: inline-block;
+    align-items: center;
+    border-collapse: collapse; /*borda colada ou junta*/ 
+}
+thead{
+    background-color: #3C4D55;
+    padding: 10px;
+    width: 100px;
+    font-size: 1.2em;
+}
+th{
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid black;
+}
+td{
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid black;
+}
+
+
+@media (max-width: 768px){
+    
+    h1{
+        font: 200 2.8em 'titulo';
+    }
+
+    main{
+        width: 450px;
+        min-height: 350px;
+        padding: 10px;
+        margin: 29px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #formulario{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+    }
+    #form-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 20px;
+    }
+    .escolha{
+        font: 500 1em 'Lucida Sans Regular', 'Lucida Grande', Verdana;
+        padding: 12px 80px;
+    }
+    #nome{
+        padding: 10px;
+        margin: 25px;
+        font-size: 1em;
+    }
+    #dia{
+        padding: 10px;
+        margin: 25px;
+        font-size: 1em;
+    }
+    #visu{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #resultado{
+        font: 100 'texto';
+        padding: 10px;
+        line-height: 1em; /*espaçamento entre as linhas*/
+        text-align: center;
+    }
+    
+    
+    caption{
+        font-size: 1.1em;
+        font-family: 'texto';
+    }
+    table{
+        border: 3px solid rgba(230, 12, 12, 0.651);
+        display: inline-block;
+        align-items: center;
+        border-collapse: collapse; /*borda colada ou junta*/ 
+    }
+    thead{
+        padding: 10px;
+        font-size: 1em;
+    }
+    th{
+        padding: 10px;
+        font-size: 1em;
+    }
+    td{
+        padding: 10px;
+        font-size: 0.7em;
+    }
+}
