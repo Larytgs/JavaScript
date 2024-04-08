@@ -26,7 +26,7 @@ function vizualizar(){
                 '<thead>',
                 '<tr>',
                     '<th>Exercicio</th>',
-                    '<th>Series</th>',
+                    '<th>Séries</th>',
                     '<th>Repetições</th>',
                 '</tr>',
                 '</thead>',

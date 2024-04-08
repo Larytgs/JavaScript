@@ -45,8 +45,8 @@ header{
     border-radius: 10px;
 }
 
-h1{
-    font: 100 3.4em 'titulo';
+header h1{
+    font: 100 3.5em 'titulo';
 } 
 
 main{
@@ -97,7 +97,7 @@ main{
     padding: 15px;
     background-color: #3C4D55;
     color: white;
-    font: italic 800 2em 'texto', arial, serif;
+    font: italic 100 2em 'texto', arial, serif;
 
     border: 0px;
     border-radius: 15px;
@@ -105,7 +105,6 @@ main{
     cursor: pointer;
 }
 #resultado{
-    font: 300 'texto';
     padding: 10px;
     line-height: 1.4em; /*espaçamento entre as linhas*/
     text-align: center;
@@ -125,8 +124,8 @@ footer{
 }
 
 
-caption{
-    font-size: 1.2em 'texto';
+capition{
+    font: 1.8em 'texto';
 }
 table{
     border: 6px solid rgba(230, 12, 12, 0.548);  
@@ -213,9 +212,8 @@ td{
     }
     
     
-    caption{
-        font-size: 1.1em;
-        font-family: 'texto';
+    capition{
+        font-size: 1.4em;
     }
     table{
         border: 3px solid rgba(230, 12, 12, 0.486);
@@ -224,9 +222,10 @@ td{
         border-collapse: collapse; /*borda colada ou junta*/ 
         margin-top: 10px;
     }
-     th{
+    th{
         padding: 8px;
         font-size: 0.8em;
+        font: 100 'texto';
     }
     td{
         padding: 10px;
