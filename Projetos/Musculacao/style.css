@@ -154,7 +154,7 @@ td{
 }
 
 
-@media (max-width: 768px){
+@media all  and (max-width: 768px){
     
     h1{
         font: 200 2.8em 'titulo';
