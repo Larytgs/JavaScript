@@ -161,7 +161,7 @@ td{
     }
 
     main{
-        width: 400px;
+        width: 430px;
         min-height: 350px;
         padding: 10px;
         margin: 29px;
@@ -224,11 +224,11 @@ td{
     }
     th{
         padding: 8px;
-        font-size: 0.7em;
+        font-size: 0.9em;
         font: 100 'texto';
     }
     td{
-        padding: 10px;
-        font-size: 0.6em;
+        padding: 8px;
+        font-size: 0.8em;
     }
 }
