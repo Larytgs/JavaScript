@@ -189,7 +189,7 @@ footer{
 
 
 
-@media (max-width: 1200px){
+@media all and (max-width: 768px){
     main{
         width: 700px;
 

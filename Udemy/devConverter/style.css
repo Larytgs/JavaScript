@@ -114,7 +114,7 @@ footer{
     width: 100%;
 }
 
-@media (max-width: 750px){
+@media all and (max-width: 750px){
     header{
         text-align: center;
         cursor: pointer;
