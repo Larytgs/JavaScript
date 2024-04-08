@@ -159,7 +159,7 @@ th{
     border: 2px solid black;
 }
 td{
-    padding: 10px;
+    padding: 8px;
     font-size: 1em;
     border: 2px solid black;
 }
@@ -172,7 +172,7 @@ td{
     }
 
     main{
-        width: 450px;
+        width: 400px;
         min-height: 350px;
         padding: 10px;
         margin: 29px;
@@ -195,7 +195,7 @@ td{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 40px 20px;
+        margin: 30px 10px;
     }
     .escolha{
         font: 500 1em 'Lucida Sans Regular', 'Lucida Grande', Verdana;
@@ -228,18 +228,15 @@ td{
         font-family: 'texto';
     }
     table{
-        border: 3px solid rgba(230, 12, 12, 0.651);
+        border: 3px solid rgba(230, 12, 12, 0.486);
         display: inline-block;
         align-items: center;
         border-collapse: collapse; /*borda colada ou junta*/ 
+        margin-top: 10px;
     }
-    thead{
-        padding: 10px;
-        font-size: 1em;
-    }
-    th{
-        padding: 10px;
-        font-size: 1em;
+     th{
+        padding: 8px;
+        font-size: 0.8em;
     }
     td{
         padding: 10px;

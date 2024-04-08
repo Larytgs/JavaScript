@@ -4,7 +4,7 @@ const group = document.getElementsByClassName('form-group')
 const nome = document.getElementById('nome')
 const dia = document.getElementById('dia')
 const res = document.getElementById('resultado')
-let = table
+
 
 function mudarTamanho(table){
     table.style.width = "600px";
@@ -18,7 +18,7 @@ function vizualizar(){
         window.alert('Selecione um dia!')
         return;
     }
-    if (nome.value = 'Lary'){
+    if (nome.value == 'Lary'){
         if(dia.value === 'seg'){
             res.innerHTML = [
                 '<capition>Exercicios Inferiores\n</capition>',
