@@ -122,7 +122,7 @@ function vizualizar(){
                 '</table>',
             ].join("\n");
         }else if(dia.value === 'ter'){
-            res.innerHTML = 'DIA DE DESCANSO!\n 🥳🥳🥳'
+            res.innerHTML = 'DIA DE DESCANSO!\n 🥳✨🥳'
         }else if(dia.value === 'qua'){
             res.innerHTML = [
                 '<capition>Exercicios Inferiores\n</capition>',
@@ -194,7 +194,7 @@ function vizualizar(){
                 '</table>',
             ].join("\n");
         }else if(dia.value === 'qui'){
-            res.innerHTML = 'DIA DE DESCANSO!\n 🥳🥳🥳'
+            res.innerHTML = 'DIA DE DESCANSO!\n 🎉🥳🎉'
         }else if(dia.value == 'sex'){
             res.innerHTML = [
                 '<capition>Exercicios Inferiores\n</capition>',
@@ -281,7 +281,7 @@ function vizualizar(){
                 '</table>',
             ].join("\n");
         }else if(dia.value === 'sab'){
-            res.innerHTML = 'DIA DE DESCANSO!\n 🥳🥳🥳'
+            res.innerHTML = 'DIA DE DESCANSO!\n 🥳🎊🥳'
         }
     }
     else if(nome.value === 'Gisa'){
