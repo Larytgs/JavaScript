@@ -44,7 +44,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -83,7 +83,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -131,7 +131,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -165,7 +165,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -203,7 +203,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -242,7 +242,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -294,7 +294,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -335,7 +335,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -381,7 +381,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -427,7 +427,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -463,7 +463,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
@@ -504,7 +504,7 @@ function vizualizar(){
                 '<tr>',
                     '<th>Exercicio</th>',
                     '<th>Séries</th>',
-                    '<th>Repetições</th>',
+                    '<th>Peso</th>',
                 '</tr>',
                 '</thead>',
 
