@@ -76,7 +76,7 @@ function vizualizar(){
                 '</tr>',
                 '</tbody>',
                 '</table>',
-
+                
                 '<capition>Exercicios Superiores\n</capition>',
                 '<table>',
                 '<thead>',
@@ -158,7 +158,7 @@ function vizualizar(){
                 '</tr>',
                 '</tbody>',
                 '</table>',
-
+                
                 '<capition>Exercicios Superiores\n</capition>',
                 '<table>',
                 '<thead>',
