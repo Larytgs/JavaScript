@@ -39,6 +39,13 @@ function vizualizar(){
         if(dia.value === 'seg'){
             res.innerHTML = [
                 '<capition>Exercicios Inferiores\n</capition>',
+                Exercicio   | Séries  |   Peso
+                :---------: | :-----: | :-------:
+                Extensora   |    4    |    40kg
+                Flexora     |    3    |    20kb
+                Elev Pelvi  |    3    |    31kg
+                Bulgaro     |    3    |    12kg
+
                 '<table>',
                 '<thead>',
                 '<tr>',
