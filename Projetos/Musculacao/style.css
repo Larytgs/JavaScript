@@ -154,7 +154,7 @@ td{
 }
 
 
-@media all and (max-width: 768px) and (orientantion: portrait){
+@media all and (max-width: 768px){
     
     h1{
         font: 200 2.8em 'titulo';
