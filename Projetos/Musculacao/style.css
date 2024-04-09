@@ -143,12 +143,12 @@ thead{
     font-size: 1.2em;
 }
 th{
-    padding: 10px;
+    padding: 10px 30px;
     font-size: 1.2em;
     border: 2px solid black;
 }
 td{
-    padding: 8px;
+    padding: 10px;
     font-size: 1em;
     border: 2px solid black;
 }
@@ -223,12 +223,12 @@ td{
         margin-top: 10px;
     }
     th{
-        padding: 8px;
-        font-size: 0.9em;
+        padding: 10px;
+        font-size: 1.2em;
         font: 100 'texto';
     }
     td{
-        padding: 8px;
-        font-size: 0.8em;
+        padding: 10px;
+        font-size: 1em;
     }
 }
