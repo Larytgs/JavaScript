@@ -55,7 +55,7 @@ function vizualizar(){
                     '<td>40kg</td>',
                 '</tr>',
                 '<tr>',
-                    '<td>Flexora</td>',
+                    '<td>Flexora-uni</td>',
                     '<td>3</td>',
                     '<td>20kg</td>',
                 '</tr>',
@@ -76,7 +76,7 @@ function vizualizar(){
                 '</tr>',
                 '</tbody>',
                 '</table>',
-                
+        
                 '<capition>Exercicios Superiores\n</capition>',
                 '<table>',
                 '<thead>',
@@ -120,7 +120,7 @@ function vizualizar(){
                 '</tr>',
                 '</tbody>',
                 '</table>',
-            ].join("\n");
+            ].join("\n\n\n");
         }else if(dia.value === 'ter'){
             res.innerHTML = 'DIA DE DESCANSO!\n 🥳✨🥳'
         }else if(dia.value === 'qua'){
@@ -152,7 +152,7 @@ function vizualizar(){
                     '<td>12kg</td>',
                 '</tr>',
                 '<tr>',
-                    '<td>Stiff</td>',
+                    '<td>Stiff-uni</td>',
                     '<td>3</td>',
                     '<td>31kg</td>',
                 '</tr>',
@@ -209,7 +209,7 @@ function vizualizar(){
 
                 '<tbody>',
                 '<tr>',
-                    '<td>Extensora</td>',
+                    '<td>Extensora-uni</td>',
                     '<td>4</td>',
                     '<td>40kg</td>',
                 '</tr>',
@@ -229,7 +229,7 @@ function vizualizar(){
                     '<td>31kg</td>',
                 '</tr>',
                 '<tr>',
-                    '<td>Afundo</td>',
+                    '<td>Avanço</td>',
                     '<td>3</td>',
                     '<td>12kg</td>',
                 '</tr>',
@@ -284,6 +284,7 @@ function vizualizar(){
             res.innerHTML = 'DIA DE DESCANSO!\n 🥳🎊🥳'
         }
     }
+
     else if(nome.value === 'Gisa'){
         if(dia.value === 'seg'){
             res.innerHTML = [
@@ -386,7 +387,7 @@ function vizualizar(){
 
                 '<tbody>',
                 '<tr>',
-                    '<td>Extensora</td>',
+                    '<td>Extensora-uni</td>',
                     '<td>3</td>',
                     '<td>45kg</td>',
                 '</tr>',
@@ -478,12 +479,12 @@ function vizualizar(){
                     '<td>31kg</td>',
                 '</tr>',
                 '<tr>',
-                    '<td>Búlgaro</td>',
+                    '<td>Avanço</td>',
                     '<td>4</td>',
                     '<td>12kg</td>',
                 '</tr>',
                 '<tr>',
-                    '<td>Stiff</td>',
+                    '<td>Stiff-uni</td>',
                     '<td>3</td>',
                     '<td>31kg</td>',
                 '</tr>',
