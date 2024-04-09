@@ -6,27 +6,6 @@ const dia = document.getElementById('dia')
 const res = document.getElementById('resultado')
 
 
-function criarTabela(conteudo){
-    var tabela = document.createElement("table");
-    var thead = document.createElement("thead");
-    var tbody=document.createElement("tbody");
-    var thd=function(i){return (i==0)?"th":"td";};
-    for (var i=0;i<conteudo.length;i++) {
-        var tr = document.createElement("tr");
-        for(var o=0;o<conteudo[i].length;o++){
-        var t = document.createElement(thd(i));
-        t.innerHTML = "<td><button onclick='alert('$id')'>$id</button></td>"
-        var texto=document.createTextNode(conteudo[i][o]);
-        t.appendChild(texto);
-        tr.appendChild(t);
-    }
-    (i==0)?thead.appendChild(tr):tbody.appendChild(tr);
-  }
-  tabela.appendChild(thead);
-  tabela.appendChild(tbody);
-  return tabela;
-}
-
 function vizualizar(){
     if(!nome.value || nome.value == ''){
         window.alert('Selecione um nome!')
@@ -38,7 +17,7 @@ function vizualizar(){
     if (nome.value == 'Lary'){
         if(dia.value === 'seg'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -77,7 +56,7 @@ function vizualizar(){
                 '</tbody>',
                 '</table>',
         
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -125,7 +104,7 @@ function vizualizar(){
             res.innerHTML = 'DIA DE DESCANSO!\n 🥳✨🥳'
         }else if(dia.value === 'qua'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -159,7 +138,7 @@ function vizualizar(){
                 '</tbody>',
                 '</table>',
                 
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -197,7 +176,7 @@ function vizualizar(){
             res.innerHTML = 'DIA DE DESCANSO!\n 🎉🥳🎉'
         }else if(dia.value == 'sex'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -236,7 +215,7 @@ function vizualizar(){
                 '</tbody>',
                 '</table>',
 
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -288,7 +267,7 @@ function vizualizar(){
     else if(nome.value === 'Gisa'){
         if(dia.value === 'seg'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -329,7 +308,7 @@ function vizualizar(){
             ].join("\n");
         }else if (dia.value === 'ter'){
             res.innerHTML = [
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -375,7 +354,7 @@ function vizualizar(){
             ].join("\n");
         }else if(dia.value === 'qua'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -421,7 +400,7 @@ function vizualizar(){
             ].join("\n");
         }else if(dia.value === 'qui'){
             res.innerHTML = [
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -457,7 +436,7 @@ function vizualizar(){
             ].join("\n");
         }else if(dia.value === 'sex'){
             res.innerHTML = [
-                '<capition>Exercicios Inferiores\n</capition>',
+                '<caption>Exercicios Inferiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
@@ -498,7 +477,7 @@ function vizualizar(){
             ].join("\n");
         }else if(dia.value === 'sab'){
             res.innerHTML = [
-                '<capition>Exercicios Superiores\n</capition>',
+                '<caption>Exercicios Superiores\n</caption>',
                 '<table>',
                 '<thead>',
                 '<tr>',
