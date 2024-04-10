@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onSubmit</title>
+    <style>
+        body{
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main{
+            background-color: antiquewhite;
+            width: 500px;
+            height: 100px;
+            margin-top: 40px;
+            padding-top: 50px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form onsubmit="enviar()">
+            <label for="">Informe sua idade: </label>
+            <input type="number" id="age">
+    
+            <br><br>
+    
+            <button type="submit">Enviar</button>
+    
+            <script>
+                function enviar(){
+                    const idade = document.getElementById('age')
+                    if (idade.value < 18){
+                        alert('Voce é menor de idade')
+                    }else if(idade.value >= 18){
+                        alert('Voce é maior de idade')
+                    }else if(idade.value > 60){
+                        alert('Voce é um velhote')
+                    }
+                }
+            </script>
+        </form>
+    </main>
+</body>
+</html>
