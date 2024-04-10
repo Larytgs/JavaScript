@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto</title>
+</head>
+<body>
+    <div id="foto">
+
+    </div>
+
+    <script>
+        let imagem = document.getElementById('foto')
+        let manha = document.createElement('img') //criando um elemento img
+
+        manha.src = './fotos/manha.png' //add o caminho para a foto
+        imagem.appendChild(manha)  //add no html, para aparecer a imagem no site
+
+        imagem.style.display = 'flex'
+        imagem.style.width = '500px'
+        imagem.style.height = '500px'
+    </script>
+</body>
+</html>
