@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto</title>
+</head>
+<body>
+    <img src="fotos/noite.png" alt="noite" width="400px" id="imagem">
+
+    <script>
+        const img = document.getElementById('imagem')
+        const atributo = img.getAttribute('alt') //pegar o valor do atributo
+
+        console.log(atributo)
+
+        img.setAttribute('width', '500px') //modifica o valor de um atributo existente num elemento específico
+        img.removeAttribute('width') //vai remover o atributo escolhido
+    </script>
+</body>
+</html>
