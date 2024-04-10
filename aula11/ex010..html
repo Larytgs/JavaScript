@@ -12,17 +12,23 @@
     <div id="res">
 
     </div>
+    <div id="res">
+
+    </div>
     <script>
         
         function calcular(){
             var txtv = window.document.getElementById('txtvelo')
-            var res = window.document.querySelector('div#res')
+            var res = window.document.querySelector('div#res') //esse pega o primeiro id
+            var ress = window.document.querySelectorAll('div#res') //esse pega todas as divs
             var vel = Number(txtv.value)
             res.innerHTML = `Sua velocidade é de ${vel}km/h`
             if (vel > 80){
                 res.innerHTML += "<p>Passou do limite, voce foi Multado!</p>"
             }
             res.innerHTML += "<p>Dirige sempre com cinto de segurança</p>"
+
+            console.log('ress');
         }
         
     </script>
