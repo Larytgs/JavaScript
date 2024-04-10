@@ -6,20 +6,24 @@
     <title>Foto</title>
 </head>
 <body>
-    <div id="foto">
+    <div id="conteiner">
 
     </div>
 
     <script>
-        let imagem = document.getElementById('foto')
+        let conteiner = document.getElementById('conteiner')
         let manha = document.createElement('img') //criando um elemento img
+        let titulo = document.createElement('h1') //criando um elemento h1
 
+        titulo.innerHTML = 'Imagem de manhã' //add o caminho para o titulo
         manha.src = './fotos/manha.png' //add o caminho para a foto
-        imagem.appendChild(manha)  //add no html, para aparecer a imagem no site
+        
+        conteiner.appendChild(titulo) //add no html, para aparecer o titulo no site
+        conteiner.appendChild(manha)  //add no html, para aparecer a imagem no site
 
-        imagem.style.display = 'flex'
-        imagem.style.width = '500px'
-        imagem.style.height = '500px'
+        manha.style.display = 'flex'
+        manha.style.width = '400px'
+        manha.style.height = '400px'
     </script>
 </body>
 </html>
