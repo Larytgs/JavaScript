@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            text-align: center;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin-top: 100px;
+            margin-bottom: 10px;
+            padding: 20px;
+            font-size:  2em;
+            color: blue;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        #caixa{
+            display: none; 
+            border: 3px;
+            border-radius: 20px;
+            background-color: blue;
+            width: 300px;
+            height: 140px;
+        }
+        p{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <button onclick="saudaçoes()">Diga ola!</button>
+                <button onclick="abrirCaixa()">Mostrar caixa</button>
+                <p id="mouse" onmouseenter="trocarTexto()" onmouseout="saindo()" onmousedown="pressionando()" >Passe o mouse aqui!</p>
+            </div>
+    
+            <div id="caixa" onmousemove="mexendo()"></div>
+        </section>
+    </main>
+
+    <script>
+        const caixa = document.getElementById('caixa')
+        const mouse = document.getElementById('mouse')
+
+        function saudaçoes(){
+            alert ('Olaaaa!!')
+        }
+
+        function abrirCaixa(){
+            caixa.style.display = 'block'
+            caixa.style.textAlign = 'center'
+        }
+
+        function trocarTexto(){
+            mouse.innerHTML = 'Texte passando o mouse'
+            mouse.style.color = 'white'
+            mouse.style.backgroundColor = 'green'
+        }
+
+        function saindo(){
+            mouse.innerHTML = 'Teste saindo o mouse'
+            mouse.style.color = 'white'
+            mouse.style.backgroundColor = 'red'
+        }
+        function pressionando(){
+            mouse.innerHTML = 'Teste pressionando o mouse'
+            mouse.style.color = 'black'
+            mouse.style.backgroundColor = 'yellow'
+        }
+
+        function mexendo(){            
+            caixa.innerHTML = 'Teste mexendo o mouse'
+            caixa.style.color = 'white'
+            caixa.style.backgroundColor = 'orange'
+            caixa.style.padding = '70px'
+            caixa.style.fontSize = '3em'
+        }
+
+    </script>
+</body>
+</html>
