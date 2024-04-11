@@ -1,5 +1,5 @@
 const form = document.getElementById('formulario');
-    form.addEventListener('submit', prevenção) //adicionar um tipo de evento ao clicar em converter
+form.addEventListener('submit', prevenção) //adicionar um tipo de evento ao clicar em converter
     
 const inputValue = document.getElementById('valor-real');
 const selectCurrency = document.getElementById('currency');

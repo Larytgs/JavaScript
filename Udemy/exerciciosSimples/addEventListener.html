@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>onSubmit</title>
+    <title>addEventListener</title>
     <style>
         body{
             background-color: azure;
@@ -14,26 +14,33 @@
         main{
             background-color: antiquewhite;
             width: 500px;
-            height: 100px;
+            min-height: 100px;
             margin-top: 40px;
             padding-top: 50px;
             text-align: center;
             
         }
+        button{
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
     <main>
-        <form onsubmit="enviar()">
+        <form id="form">
             <label>Informe sua idade: </label>
             <input type="number" id="age">
-    
             <br><br>
-    
             <button type="submit">Enviar</button> <!--tem que ter um botao tipo submit, para funcionar-->
-    
+            <br>
+            <button id="btn">Diga ola</button>
             <script>
-                function enviar(){
+                const form = document.getElementById("form")
+
+                form.addEventListener('submit', enviar)
+
+                function enviar(e){
+                    e.preventDefault() //para nao carregar a pagina sozinho
                     const idade = document.getElementById('age')
                     if (idade.value < 18){
                         alert('Voce é menor de idade')
@@ -43,6 +50,12 @@
                         alert('Voce é um velhote')
                     }
                 }
+
+                const botao = document.getElementById('btn')
+
+                botao.addEventListener('click', function(clicar){
+                    alert('OLAAAA!')
+                })
             </script>
         </form>
     </main>
