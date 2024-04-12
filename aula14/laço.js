@@ -13,10 +13,10 @@ while (c <= 6) { //enquanto o contador der 6..
     console.log(`Passo ${c}`)
     c++ //c = c + 1
 }
-
+console.log('--------------------------')
 //esse executa o comando e depois faz o teste
-var c = 1
+var s = 1
 do {
     console.log(`Passo ${s}`)
-    c++
-} while (c <= 6)
+    s++
+} while (s <= 6)

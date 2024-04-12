@@ -35,6 +35,7 @@ nomes.forEach((nome, index) => {
     console.log('----------------------')
 })
 console.log('-------------------------------------')
+
 //exercicio2
 const cidades = ['São Paulo', 'Rio de Janeiro', 'Curitiba', 'Joinville']
 
