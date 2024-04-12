@@ -4,6 +4,16 @@ while(c <= 5) {
     c++
 }*/
 
-for (var c = 1;c<=10;c++){
+//repetição com array
+
+const cidades = ['São Paulo', 'Rio de Janeiro', 'Curitiba', 'Joinville']
+
+cidades.forEach( (elemento) => { //add uma variavele 
+    console.log(elemento)        //e uma função anonima
+})
+
+//for normal
+
+for (var c = 1; c = cidades; c++){
     console.log(c)
 }
