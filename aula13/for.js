@@ -14,6 +14,6 @@ cidades.forEach( (elemento) => { //add uma variavele
 
 //for normal
 
-for (var c = 1; c = cidades; c++){
+for (var c = 1; c < cidades.le; c++){
     console.log(c)
 }
